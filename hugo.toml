@@ -6,7 +6,7 @@ theme = 'PaperMod'
 [params]
   description = 'ある日、突然、アマチュア無線を再び、やってみようと思い付き、十数年ぶりに再開した無線局のつぶやき。'
   author = 'jh0ill'
-  defaultTheme = "dark"
+
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
