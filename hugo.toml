@@ -1,0 +1,30 @@
+baseURL = 'https://takahashi-kenji.github.io/jh0ill-blog/'
+languageCode = 'ja'
+title = 'アマチュア無線家JH0ILLのつぶやき'
+theme = 'PaperMod'
+
+[params]
+  description = 'ある日、突然、アマチュア無線を再び、やってみようと思い付き、十数年ぶりに再開した無線局のつぶやき。'
+  author = 'jh0ill'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Takahashi-Kenji"
+
+[menu]
+  [[menu.main]]
+    name = 'ホーム'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = '記事一覧'
+    url = '/posts/'
+    weight = 2
