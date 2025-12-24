@@ -1,0 +1,200 @@
+/* アマチュア無線風カスタムデザイン */
+
+:root {
+    --ham-radio-dark: #1a1a1a;
+    --ham-radio-panel: #2d2d2d;
+    --ham-radio-orange: #ff6b35;
+    --ham-radio-green: #00ff41;
+    --ham-radio-blue: #00d4ff;
+    --ham-radio-yellow: #ffd700;
+    --ham-radio-border: #444;
+    --ham-radio-text: #e0e0e0;
+}
+
+/* ダークテーマをデフォルトに */
+body {
+    background: linear-gradient(135deg, var(--ham-radio-dark) 0%, #0a0a0a 100%);
+    color: var(--ham-radio-text);
+    font-family: 'Courier New', 'Consolas', monospace;
+}
+
+/* ヘッダー - 無線機のディスプレイ風 */
+.header {
+    background: var(--ham-radio-panel);
+    border-bottom: 3px solid var(--ham-radio-orange);
+    box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+}
+
+.logo {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: var(--ham-radio-orange) !important;
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+    letter-spacing: 2px;
+}
+
+/* ナビゲーション */
+.nav a {
+    color: var(--ham-radio-green) !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--ham-radio-orange) !important;
+    text-shadow: 0 0 8px rgba(255, 107, 53, 0.8);
+}
+
+/* メインコンテンツエリア */
+.main {
+    background: rgba(45, 45, 45, 0.8);
+    border: 2px solid var(--ham-radio-border);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 記事カード - 無線機のパネル風 */
+.post-entry {
+    background: var(--ham-radio-panel);
+    border: 2px solid var(--ham-radio-border);
+    border-left: 4px solid var(--ham-radio-orange);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.post-entry:hover {
+    border-left-color: var(--ham-radio-green);
+    box-shadow: 0 4px 16px rgba(0, 255, 65, 0.2);
+    transform: translateX(5px);
+}
+
+/* 記事タイトル */
+.entry-header h2 {
+    color: var(--ham-radio-orange);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entry-header h2:hover {
+    color: var(--ham-radio-green);
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+/* メタ情報 - 周波数表示風 */
+.entry-footer {
+    color: var(--ham-radio-blue);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    border-top: 1px solid var(--ham-radio-border);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* リンク */
+a {
+    color: var(--ham-radio-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--ham-radio-orange);
+    text-shadow: 0 0 8px rgba(255, 107, 53, 0.6);
+}
+
+/* コードブロック - ターミナル風 */
+code {
+    background: #0a0a0a;
+    color: var(--ham-radio-green);
+    border: 1px solid var(--ham-radio-border);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+pre {
+    background: #0a0a0a;
+    border: 2px solid var(--ham-radio-orange);
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+/* ボタン - 無線機のボタン風 */
+button, .button {
+    background: var(--ham-radio-panel);
+    color: var(--ham-radio-orange);
+    border: 2px solid var(--ham-radio-orange);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background: var(--ham-radio-orange);
+    color: var(--ham-radio-dark);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.6);
+}
+
+/* フッター */
+.footer {
+    background: var(--ham-radio-panel);
+    border-top: 3px solid var(--ham-radio-orange);
+    color: var(--ham-radio-text);
+    font-family: 'Courier New', monospace;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--ham-radio-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ham-radio-orange);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ham-radio-green);
+}
+
+/* アニメーション効果 - 電波のパルス */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.logo::before {
+    content: "📡 ";
+    animation: pulse 2s infinite;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+    
+    .post-entry {
+        padding: 15px;
+    }
+}

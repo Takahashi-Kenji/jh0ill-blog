@@ -28,3 +28,13 @@ theme = 'PaperMod'
     name = '記事一覧'
     url = '/posts/'
     weight = 2
+
+[params]
+  defaultTheme = "dark"
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
